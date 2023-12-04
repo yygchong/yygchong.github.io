@@ -32,6 +32,20 @@ video {
   margin-top: 10px;
 }
 
+.aboutMeExperienceButton {
+  margin-top: 10px;
+}
+
+#details {
+  top: 0;
+  left: 0;
+  width: 150px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+}
+
 #workMetaDetails {
   position: absolute;
   top: 62%;
@@ -57,26 +71,36 @@ video {
   border: 0px solid #333;
 }
 
-#projectExperience {
+#workVideoOverlay {
   position: absolute;
-  top: 115%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50vw;
-  height: 50vw; 
-  max-height: 50vh; 
-  overflow: hidden;
-  border: 0px solid #333;
-}
-
-#details {
   top: 0;
   left: 0;
-  width: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+#workExperience video {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+#workTextOverlay {
+  margin: 0;
+  font-size: 1.3rem;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px;
+}
+
+#workDetailsOverlay{
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 #projectMetaDetails {
@@ -92,21 +116,19 @@ video {
   font-size: 16px;
 }
 
-#videoOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
+#projectTextOverlay {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-#videoOverlayProjects {
+#projectExperience video {
+  width: 50%;
+  height: 80%;
+  object-fit: cover;
+}
+
+#projectsVideoOverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -120,40 +142,128 @@ video {
   text-align: center;
 }
 
-#projectExperience video {
-  width: 50%;
-  height: 80%;
-  object-fit: cover;
-}
-
-#workExperience video {
-  width: 100%;
-  height: 60%;
-  object-fit: cover;
-}
-
-#workTextOverlay {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-#projectTextOverlay {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-#workDetailsOverlay{
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: bold;
+#projectExperience {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vw; 
+  max-height: 50vh; 
+  overflow: hidden;
+  border: 0px solid #333;
 }
 
 #projectDetailsOverlay{
   margin: 0;
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+#aboutMe {
+  position: absolute;
+  top: 161%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vw; 
+  max-height: 50vh; 
+  overflow: hidden;
+  border: 0px solid #333;
+}
+
+#aboutMeMetaDetails {
+  position: absolute;
+  top: -3%;
+  left: 55%;
+  width: 40%;
+  height: 35vw;
+  max-height: 60vh;
+  color: black;
+  overflow: hidden;
+  /* border: 1px solid #333; */
+  font-size: 16px;
+}
+
+#aboutMeDetailsOverlay{
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#aboutMeVideoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff; 
+  text-align: center;
+}
+
+#aboutMe video {
+  width: 50%;
+  height: 80%;
+  object-fit: cover;
+}
+
+#aboutMeImageOverlay1 {
+  position: absolute;
+  top: 10%;
+  left: 61.4%;
+  width: 45%;
+  height: 45%;
+  background: url('assets/profile_pic_2.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+#aboutMeImageOverlay2 {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 25%;
+  height: 40%;
+  background: url('assets/profile_pic_3.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+#aboutMeImageOverlay3 {
+  position: absolute;
+  top: 12%;
+  left: 23%;
+  width: 45%;
+  height: 30%;
+  background: url('assets/Untitled_Artwork.png') center center no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+#aboutMeImageOverlay4 {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 60%;
+  height: 60%;
+  background: url('assets/profile_pic_1.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+#aboutMeImageOverlay5 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: url('assets/Olive.png') center center no-repeat;
+  background-size: cover;
+  opacity: 1;
 }
 
 .linkedin-icon {
