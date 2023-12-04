@@ -161,3 +161,28 @@ function changeProjectVersion() {
     projectVideoPlayer.load();
     projectVideoPlayer.play();
 }
+
+// Array of video URLs to preload
+const videoUrls = [
+'assets/project_experience1.mp4',
+'assets/project_experience2.mp4',
+'assets/project_experience4.mp4',
+'assets/work_experience1.mp4',
+'assets/work_experience2.mp4',
+'assets/work_experience3.mp4',
+'assets/work_experience4.mp4'
+// Add more video URLs as needed
+];
+
+// Preload videos
+function preloadVideos(urls) {
+urls.forEach(url => {
+    const video = new Image();
+    video.src = url;
+});
+}
+
+// Call the function to preload videos
+window.onload = function () {
+    preloadVideos(videoUrls);
+  };
