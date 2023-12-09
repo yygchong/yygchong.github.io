@@ -166,10 +166,9 @@ let aboutMeVersionIndex = 0;
 
 const aboutMeDefault = `<p> 
     <b> Yo my name is Yong </b> <br> <i> 1998 -  </i> <br> <br>
-    - I graduated from UC Davis in 2020 with a B.S. in Computer Science with half a minor in Statistics and half a minor in Economics <br>
+    - I graduated from UC Davis in 2020 with a B.S. in Computer Science <br>
     - I'm currently living in San Jose, CA with my cat Olive <br>
     - I have always found myself to be curious, I love learning about new things, exploring new places and listening to people's stories and ideas <br>
-    - Growing up I enjoyed drawing, writing stories, and playing video games with my big sister <br> <br>
     <br>
     </p>
     
@@ -177,29 +176,29 @@ const aboutMeDefault = `<p>
     <div id="aboutMeImageOverlay5"></div>`;
 
 const aboutMeGardening = `<p> 
-    <b> I always loved spending time in my moms garden, and being outside and touching all the leaves and smelling the dirt </b> <br> <i>  </i> <br> <br>
+    <b> I have always loved spending time in the garden, and being outside </b> <br> <i>  </i> <br> <br>
     - As I grew older my love of gardening translated into a large houseplant collection I keep <br>
     - As well as growing edible crops and fruits when I am home or helping out my neighbors in their Yards <br>
     - I try to integrate a level of engineering towards my plants as well including modulating light levels, moisture/nutrients <br>
     <br>
     </p>`;
 
-const aboutMeContentCreation = `<p> 
-    <b> Yo my name is Yong </b> <br> <i> 1998 -  </i> <br> <br>
-    - I graduated from UC Davis in 2020 with a B.S. in Computer Science with half a minor in Statistics and half a minor in Economics <br>
-    - I'm currently living in San Jose, CA with my cat Olive <br>
-    - I have always found myself to be curious, I love learning about new things, exploring new places and listening to people's stories and ideas <br>
-    - Growing up I enjoyed drawing, writing stories, and playing video games with my big sister <br> <br>
-    <br>
-    </p>`;
+// const aboutMeContentCreation = `<p> 
+//     <b> Yo my name is Yong </b> <br> <i> 1998 -  </i> <br> <br>
+//     - I graduated from UC Davis in 2020 with a B.S. in Computer Science <br>
+//     - I'm currently living in San Jose, CA with my cat Olive <br>
+//     - I have always found myself to be curious, I love learning about new things, exploring new places and listening to people's stories and ideas <br>
+//     - Growing up I enjoyed drawing, writing stories, and playing video games with my big sister <br> <br>
+//     <br>
+//     </p>`;
 
-const aboutMeBreakDancing = `<p> 
-    <b> I've always loved staying active and moving </b> <br> <i> 1998 -  </i> <br> <br>
-    - During college I found a love for breakdancing, the free flow creativity and physical exertion of break dancing <br>
-    - I served as UC Davis' break dancing clubs vice president for 2 years <br>
-    - During 2023 I taught break dancing <br> <br>
-    <br>
-    </p>`;
+// const aboutMeBreakDancing = `<p> 
+//     <b> I enjoy staying active and moving </b> <br> <i> 1998 -  </i> <br> <br>
+//     - During college I found a love for breakdancing, the free flow creativity and physical exertion of break dancing <br>
+//     - I served as UC Davis' break dancing clubs vice president for 2 years <br>
+//     - During 2023 I taught break dancing <br> <br>
+//     <br>
+//     </p>`;
 
 const aboutMeVersions = [
     { video: 'assets/about_me1.mp4', text: '', details: 'About Me', metaDetails: aboutMeDefault},
