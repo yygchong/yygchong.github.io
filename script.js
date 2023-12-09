@@ -231,8 +231,9 @@ const videoUrls = [
 // Preload videos
 function preloadVideos(urls) {
 urls.forEach(url => {
-    const video = new Image();
+    const video = document.createElement('video');
     video.src = url;
+    video.preload = 'auto';
 });
 }
 
