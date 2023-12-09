@@ -238,6 +238,8 @@ urls.forEach(url => {
 }
 
 // Call the function to preload videos
-window.onload = function () {
-    preloadVideos(videoUrls);
-  };
+// window.onload = function () {
+//     preloadVideos(videoUrls);
+//   };
+
+preloadVideos(videoUrls);
