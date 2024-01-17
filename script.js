@@ -50,6 +50,24 @@ const workTextOverlay = document.getElementById('workTextOverlay');
 const workDetailsOverlay = document.getElementById('workDetailsOverlay');
 const workMetaDetails = document.getElementById('workMetaDetails');
 
+// Using this to dynamically set the position of blocks relative to each other
+const workExperienceElement = document.getElementById('workExperience');
+const projectExperienceElement = document.getElementById('projectExperience');
+const aboutMeElement = document.getElementById('aboutMe');
+
+// Dynamic relative positioning of projectExperience
+// const workExperienceBottom = workExperienceElement.getBoundingClientRect().bottom;
+// const percentageBelow = 45; // Adjust this percentage as needed
+// const topPosition = workExperienceBottom + (percentageBelow / 100) * window.innerHeight;
+// projectExperienceElement.style.top = `${topPosition}px`;
+
+// Calculate the top position of projectExperience based on the absolute position of workExperience
+const percentageBelow = 10 // Adjust this percentage as needed
+const topPositionWorkExperience = workExperienceElement.offsetTop + workExperienceElement.offsetHeight + (percentageBelow / 100) * window.innerHeight * -1;
+projectExperienceElement.style.top = `${topPositionWorkExperience}px`;
+const topPositionProjectExperience = projectExperienceElement.offsetTop + projectExperienceElement.offsetHeight + (percentageBelow / 100) * window.innerHeight;
+aboutMeElement.style.top = `${topPositionProjectExperience}px`;
+
 const tiktokExperience = `
     <p> 
     <b> Site Reliability Engineer (Global Payments) </b> <br> <i> 09.2022 - present </i> <br> <br>

@@ -64,9 +64,9 @@ video {
   left: 0;
   width: 100%;
   height: 35vw;
-  max-height: 60vh;
+  max-height: 35vh;
   color: black;
-  overflow: hidden;
+  overflow-y: auto;
   /* border: 1px solid #333; */
   font-size: 16px; 
 }
@@ -105,7 +105,6 @@ video {
 
 #projectExperience {
   position: absolute;
-  top: 115%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
@@ -117,13 +116,13 @@ video {
 
 #projectMetaDetails {
   position: absolute;
-  top: -3%;
+  top: 0%;
   left: 55%;
   width: 45%;
-  height: 41vh;
-  max-height: 60vh;
+  height: 35vh;
+  max-height: 35vh;
   color: black;
-  overflow:hidden
+  overflow-y: auto;
   /* border: 1px solid #333; */
   font-size: 16px;
 }
@@ -178,7 +177,7 @@ video {
   left: 55%;
   width: 45%;
   height: 35vw;
-  max-height: 60vh;
+  max-height: 35vh;
   color: black;
   overflow: hidden;
   /* border: 1px solid #333; */
@@ -279,4 +278,3 @@ video {
   top: 54%;
   transform: translateY(-54%);
 }
-
