@@ -2,7 +2,7 @@ header {
   text-align: center;
   padding: 20px;
   margin-top: 1%;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
 }
 
 body {
@@ -216,9 +216,9 @@ position: relative;
 #aboutMe {
   position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0vw;
-  height: 0vw; 
+  transform: translate(-50%, -220%);
+  width: 50vw;
+  height: 40vw; 
   max-height: 40vh; 
   overflow: hidden;
   border: 0px solid #333;
@@ -262,10 +262,10 @@ position: relative;
 
 #aboutMeImageOverlay1 {
   position: absolute;
-  top: -155%;
+  top: -175%;
   left: 82%;
-  width: 25%;
-  height: 75%;
+  width: 30%;
+  height: 90%;
   background: url('assets/profile_pic_2.jpeg') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
