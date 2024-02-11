@@ -3,12 +3,14 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
 </head>
 <body>
     <meta charset="UTF-8">
     <header>
-        <h1 id="fade-in-title" class="hidden">Title 1</h1>
+        <!-- <h1 id="fade-in-title" class="hidden"></h1> -->
+        <h1> Yong Chong [Design, Code, Launch]</h1>
     </header>
 
     <a href="https://www.linkedin.com/in/yygchong/" target="_blank" rel="noopener noreferrer" class="linkedin-icon">
@@ -30,20 +32,27 @@
                 - Managed general SRE and infrastructure needs including deploying production services with CI/CD model, shard migrations, stress testing, and 24/7 on-call rotations. Successfully resolved critical issues within a complex microservice environment, such as P0 outages in payment channels, showcasing exceptional problem-solving skills and ensuring the reliability of high-stakes services. Additionally monitored the health of clusters and services using tools like Grafana and Kibana, while supporting the log distribution environment across various components. Also assumed ownership of critical Customer Platform components for the US team, including Capital accounts, Merchant statements, and Fee processing<br>
             </p>
         </div>
-        <div id="details">
-            <p id="workDetailsOverlay">Work Experience</p>
-        </div>
         <div id="workVideoOverlay">
             <video id="workVideoPlayer" autoplay loop muted>
                 <source id="workVideoSource" src="assets/work_experience1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p id="workTextOverlay">TikTok</p>
-            <button class="workExperienceButton" onclick="changeWorkVersion()">Other Work Experience</button>
+            <p id="companyName"></p>
+            <img id="companyLogo" src="assets/tiktok_logo.svg" alt="TikTok Logo" width="100" height="100">
+                <source id="companyLogoSource" src="assets/tiktok_logo.svg" type="image/png">
+            </img>
+            <ul class="menu">
+                <li class="menuItem active" onclick="changeWorkVersion(0)"></li>
+                <li class="menuItem" onclick="changeWorkVersion(1)"></li>
+                <li class="menuItem" onclick="changeWorkVersion(2)"></li>
+                <li class="menuItem" onclick="changeWorkVersion(3)"></li>
+            </ul>
         </div>
     </div>
-
+    
     <div id="projectExperience">
+        <div id="aboutMeImageOverlay1">This is my <b>work experience</b> <br> feel free to read it through</div>
+        <div id="aboutMeImageOverlay2">Oh yeah these are some of <b>my projects</b> that I've worked on over the years</div>
         <div id="projectMetaDetails">
             <p> 
                 <b> President + Co-Founder </b> <br> <i> 11.2018 - 03.2020 </i> <br> <br>
@@ -59,16 +68,13 @@
                 - Oversaw the challenging task of raising $30,000 for the first collegiate Hackathon in Sacramento. - Worked closely with companies and organizations such as EA, the NBA (Sacramento Kings), Wolfram, Github, Bloomberg, MLH, Nvidia, Soylent and Google.
             </p>
         </div>
-        <div id="details">
-            <p id="projectDetailsOverlay">My Projects</p>
-        </div>
         <div id="projectsVideoOverlay">
             <video id="projectVideoPlayer" autoplay loop muted>
                 <source id="projectVideoSource" src="assets/project_experience1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p id="projectTextOverlay">SacHacks</p>
-            <button class="projectExperienceButton" onclick="changeProjectVersion()">Other Projects</button>
+            <p id="projectName">SacHacks</p>
+            <button class="nextButton" onclick="changeProjectVersion()">↳</button>
         </div>
     </div>
 
@@ -91,13 +97,13 @@
                 <source id="aboutMeVideoSource" src="assets/about_me1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div id="aboutMeImageOverlay1"></div>
-            <div id="aboutMeImageOverlay2"></div>
+            
+            
             <div id="aboutMeImageOverlay3"></div>
             <div id="aboutMeImageOverlay4"></div>
             <div id="aboutMeImageOverlay5"></div>
             <p id="aboutMeTextOverlay"></p>
-            <button class="aboutMeExperienceButton" onclick="changeAboutMeVersion()">More About Me[W.I.P.]</button>
+            <button class="nextButton" onclick="changeAboutMeVersion()">↳</button>
         </div>
     </div>
     

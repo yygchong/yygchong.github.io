@@ -2,6 +2,11 @@ header {
   text-align: center;
   padding: 20px;
   margin-top: 1%;
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .hidden {
@@ -24,16 +29,47 @@ video {
   z-index: -1;
 }
 
-.workExperienceButton {
+.nextButton {
   margin-top: 10px;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  color: white;
 }
 
-.projectExperienceButton {
-  margin-top: 10px;
+.menu {
+  display: flex;
+  list-style: none;
+  opacity: 0.75;
+  padding: 1vh;
+  background-color: white; /* Background color for the rounded rectangle */
+  border-radius: 50%; /* Border radius for the rounded rectangle */
 }
 
-.aboutMeExperienceButton {
-  margin-top: 10px;
+.menuItem {
+  cursor: pointer;
+  margin: 0 10px;
+  /* background-color: #3498db; */
+  background-color: black;
+  opacity: 0.9;
+  border-radius: 20px;
+  width: 10px;
+  height: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.menuItem.active {
+  width: 40px;
+}
+
+.sideways-text {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%) rotate(-90deg);
+  white-space: nowrap;
+  font-size: 14px; 
+  color: #000; 
 }
 
 #details {
@@ -87,14 +123,27 @@ video {
 
 #workExperience video {
   width: 100%;
+  border-radius: 50%;
   height: 60%;
   object-fit: cover;
 }
 
-#workTextOverlay {
+#companyName {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#companyLogo{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 12%;
+  height: auto;
+  opacity: 0.85;
+  aspect-ratio: 9 / 9;
+  border-radius: 5%;
 }
 
 #workDetailsOverlay{
@@ -104,13 +153,13 @@ video {
 }
 
 #projectExperience {
-  position: absolute;
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
   width: 50vw;
   height: 40vw; 
   max-height: 40vh; 
-  overflow: hidden;
+  overflow: visible;
   border: 0px solid #333;
 }
 
@@ -127,10 +176,11 @@ video {
   font-size: 16px;
 }
 
-#projectTextOverlay {
+#projectName {
   margin: 0;
   font-size: 1.3rem;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a drop shadow to the text */
 }
 
 #projectExperience video {
@@ -159,23 +209,23 @@ video {
   font-weight: bold;
 }
 
+#parentTemp {
+position: relative;
+
+}
 #aboutMe {
-  position: absolute;
-  top: 170%;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50vw;
-  height: 70vw; 
-  max-height: 70vh; 
+  width: 0vw;
+  height: 0vw; 
+  max-height: 40vh; 
   overflow: hidden;
-  /* border: 1px solid #333; */
+  border: 0px solid #333;
 }
 
 #aboutMeMetaDetails {
-  position: absolute;
-  top: 0%;
-  left: 55%;
-  width: 45%;
+  flex-grow: 1;
   height: 35vw;
   max-height: 35vh;
   color: black;
@@ -212,24 +262,27 @@ video {
 
 #aboutMeImageOverlay1 {
   position: absolute;
-  top: 10%;
-  left: 63.8%;
-  width: 44%;
-  height: 44%;
+  top: -155%;
+  left: 82%;
+  width: 25%;
+  height: 75%;
   background: url('assets/profile_pic_2.jpeg') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
+  padding: 10px;
 }
+
 
 #aboutMeImageOverlay2 {
   position: absolute;
-  top: 45%;
-  left: 5%;
+  top: -10%;
+  left: -19%;
   width: 25%;
-  height: 40%;
+  height: 70%;
   background: url('assets/profile_pic_3.jpeg') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
+  padding: 10px;
 }
 
 #aboutMeImageOverlay3 {

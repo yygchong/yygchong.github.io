@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
         
     // Select the title element
     const title = document.getElementById("fade-in-title");
-
-    const titles = ["welcome to my website on the {world wide web} \u{1F30E} \u{1F9A4} \u{1F44D}", "Yong Chong \u{1F52E} 庄永扬"]; // Define your titles
+    // "welcome to my website on the {world wide web} \u{1F30E} \u{1F9A4} \u{1F44D} 庄永扬"
+    const titles = ["Yong Chong"]; // Define your titles
     let currentIndex = -1;
 
     function fadeInNewTitle() {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const workVideoPlayer = document.getElementById('workVideoPlayer');
 const workVideoSource = document.getElementById('workVideoSource');
-const workTextOverlay = document.getElementById('workTextOverlay');
+const companyName = document.getElementById('companyName');
 const workDetailsOverlay = document.getElementById('workDetailsOverlay');
 const workMetaDetails = document.getElementById('workMetaDetails');
 
@@ -107,20 +107,29 @@ const ucdavisExperience = `
     - (https://sjoseph.ucdavis.edu/)<br>
     </p>`;
 const workVersions = [
-    { video: 'assets/work_experience1.mp4', text: 'TikTok', details: 'Work Experience', metaDetails: tiktokExperience},
-    { video: 'assets/work_experience2.mp4', text: 'IBM', details: 'Work Experience', metaDetails: ibmExperience},
-    { video: 'assets/work_experience3.mp4', text: 'VSP', details: 'Work Experience', metaDetails: vspExperience},
-    { video: 'assets/work_experience4.mp4', text: 'UC Davis', details: 'Work Experience', metaDetails: ucdavisExperience }
+    { video: 'assets/work_experience1.mp4', text: '', details: 'Work Experience', logo: 'assets/tiktok_logo.svg' , metaDetails: tiktokExperience},
+    { video: 'assets/work_experience2.mp4', text: '', details: 'Work Experience',logo: 'assets/ibm_logo.svg' , metaDetails: ibmExperience},
+    { video: 'assets/work_experience3.mp4', text: '', details: 'Work Experience',logo: 'assets/vsp_logo.png', metaDetails: vspExperience},
+    { video: 'assets/work_experience4.mp4', text: '', details: 'Work Experience',logo: 'assets/ucdavis_logo.svg' , metaDetails: ucdavisExperience }
     // Add more workVersions as needed
 ];
 let currentWorkVersionIndex = 0;
 
 // Function to change the video source and text content
-function changeWorkVersion() {
-    currentWorkVersionIndex = (currentWorkVersionIndex + 1) % workVersions.length;
+function changeWorkVersion(pageIndex) {
+    // Add your logic to switch the page here
+    console.log('Switching to page', pageIndex);
+
+    // Reset all items to inactive state
+    const menuItems = document.querySelectorAll('.menuItem');
+    menuItems.forEach(item => item.classList.remove('active'));
+
+    // Set the clicked item to active state
+    menuItems[pageIndex].classList.add('active');
+    currentWorkVersionIndex = pageIndex;
     workVideoSource.src = workVersions[currentWorkVersionIndex].video;
-    workTextOverlay.textContent = workVersions[currentWorkVersionIndex].text;
-    workDetailsOverlay.textContent = workVersions[currentWorkVersionIndex].details;
+    companyName.textContent = workVersions[currentWorkVersionIndex].text;
+    companyLogo.src = workVersions[currentWorkVersionIndex].logo;
     workMetaDetails.innerHTML = workVersions[currentWorkVersionIndex].metaDetails;
     workVideoPlayer.load();
     workVideoPlayer.play();
@@ -173,8 +182,7 @@ const projectVersions = [
 function changeProjectVersion() {
     currentProjectVersionIndex = (currentProjectVersionIndex + 1) % projectVersions.length;
     projectVideoSource.src = projectVersions[currentProjectVersionIndex].video;
-    projectTextOverlay.textContent = projectVersions[currentProjectVersionIndex].text;
-    projectDetailsOverlay.textContent = projectVersions[currentProjectVersionIndex].details;
+    projectName.textContent = projectVersions[currentProjectVersionIndex].text;
     projectMetaDetails.innerHTML = projectVersions[currentProjectVersionIndex].metaDetails;
     projectVideoPlayer.load();
     projectVideoPlayer.play();
@@ -246,6 +254,12 @@ const videoUrls = [
 // Add more video URLs as needed
 ];
 
+const logoUrls = [
+    'assets/tiktok_logo.png',
+    'assets/project_experience2.mp4'
+    // Add more video URLs as needed
+    ];
+
 // Preload videos
 function preloadVideos(urls) {
 urls.forEach(url => {
@@ -261,3 +275,15 @@ urls.forEach(url => {
 //   };
 
 preloadVideos(videoUrls);
+
+function switchPage(pageIndex) {
+    // Add your logic to switch the page here
+    console.log('Switching to page', pageIndex);
+    
+    // Reset all items to inactive state
+    const menuItems = document.querySelectorAll('.menuItem');
+    menuItems.forEach(item => item.classList.remove('active'));
+
+    // Set the clicked item to active state
+    menuItems[pageIndex].classList.add('active');
+  }
