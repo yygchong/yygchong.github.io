@@ -57,7 +57,7 @@ const workVideoPlayer = document.getElementById('workVideoPlayer');
 const workVideoSource = document.getElementById('workVideoSource');
 const companyName = document.getElementById('companyName');
 const workDetailsOverlay = document.getElementById('workDetailsOverlay');
-const workMetaDetails = document.getElementById('workMetaDetails');
+const workMetaDetails = document.getElementsByClassName('workMetaDetails');
 
 // Using this to dynamically set the position of blocks relative to each other
 const workExperienceElement = document.getElementById('workExperience');
@@ -189,6 +189,8 @@ const projectVersions = [
     // Add more workVersions as needed
 ];
 
+const projectMetaDetails = document.getElementsByClassName('projectMetaDetails');
+
 function changeProjectVersion() {
     currentProjectVersionIndex = (currentProjectVersionIndex + 1) % projectVersions.length;
     projectVideoSource.src = projectVersions[currentProjectVersionIndex].video;
@@ -239,7 +241,7 @@ const aboutMeGardening = `<p>
 const aboutMeVersions = [
     { video: 'assets/about_me1.mp4', text: '', details: 'About Me', metaDetails: aboutMeDefault},
     { video: 'assets/about_me1.mp4', text: '', details: 'About Me', metaDetails: aboutMeGardening},
-    { video: 'assets/about_me1.mp4', text: '', details: 'About Me', metaDetails: aboutMeBreakDancing }
+    { video: 'assets/about_me1.mp4', text: '', details: 'About Me', metaDetails: aboutMeBreakDancing}
 ];
 
 function changeAboutMeVersion() {
