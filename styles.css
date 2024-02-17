@@ -92,16 +92,20 @@ video {
   border: 0px solid #333;
 }
 
-#workMetaDetails {
+.workMetaDetails {
   position: relative;
   height: 30%;
   top: 50%;
   left: 0;
   width: 100%;
   color: black;
-  overflow-y: auto;
+  overflow: hidden;
   /* border: 1px solid #333; */
   font-size: 16px; 
+}
+
+.workMetaDetails:hover {
+  overflow-y: auto;
 }
 
 #workVideoOverlay {
@@ -160,7 +164,7 @@ video {
   border: 0px solid #333;
 }
 
-#projectMetaDetails {
+.projectMetaDetails {
   position: absolute;
   top: -4%;
   left: 55%;
@@ -168,9 +172,13 @@ video {
   height: 35vh;
   max-height: 35vh;
   color: black;
-  overflow-y: auto;
+  overflow: hidden;
   /* border: 1px solid #333; */
   font-size: 16px;
+}
+
+.projectMetaDetails:hover {
+  overflow-y: auto;
 }
 
 #projectName {
@@ -220,7 +228,7 @@ position: relative;
   border: 0px solid #333;
 }
 
-#aboutMeMetaDetails {
+.aboutMeMetaDetails {
   position: absolute;
   top: -4%;
   left: 55%;
@@ -228,9 +236,13 @@ position: relative;
   height: 35vh;
   max-height: 35vh;
   color: black;
-  overflow-y: auto;
+  overflow: hidden;
   /* border: 1px solid #333; */
   font-size: 16px;
+}
+
+.aboutMeMetaDetails:hover {
+  overflow-y: auto;
 }
 
 #aboutMeDetailsOverlay{
@@ -286,7 +298,7 @@ position: relative;
 
 #aboutMeImageOverlay3 {
   position: absolute;
-  top: -95%;
+  top: -125%;
   left: 205%;
   width: 65%;
   height: 50%;
