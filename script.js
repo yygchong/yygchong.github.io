@@ -113,7 +113,7 @@ const ucdavisExperience = `
     - Web Developer and IT Staff for the lab of Dr. Suad Joseph. <br>
     - Used Plone, HTML, Python, PHP and JS.<br>
     - Additional responsibility as an acting lab manager 3 days a week.<br>
-    - (https://sjoseph.ucdavis.edu/)<br>
+    - <a href="https://sjoseph.ucdavis.edu"> https://sjoseph.ucdavis.edu/ </a><br>
     </p>`;
 const workVersions = [
     { video: 'assets/work_experience1.mp4', text: '', details: 'Work Experience', logo: 'assets/tiktok_logo.svg' , metaDetails: tiktokExperience},
@@ -146,7 +146,7 @@ function changeWorkVersion(pageIndex) {
 
 const sachacksProject = `<p> 
 <b> President + Co-Founder </b> <br> <i> 11.2018 - 03.2020 </i> <br> <br>
-- Led a team of 40+ people with the mission to create and run Sacramento's premiere annual intercollegiate Hackathon, an event aimed towards creating a lasting impact on young engineers, designers and entrepreneurs around the Sacramento region. <br>
+- Led a team of 40+ people with the mission to create and run Sacramento's <a href="https://www.nba.com/kings/news/sacramento-kings-sachacks-and-major-league-hacking-host-sacramentos-first-extensive"> premiere annual intercollegiate Hackathon</a>, an event aimed towards creating a lasting impact on young engineers, designers and entrepreneurs around the Sacramento region. <br>
 - Directly oversaw a team which raised over $35,000 in funding.<br>
 - Organized meetings and worked directly with partners across different channels including officials from MLH, from schools such as UC Davis, and from corporate sponsors such as IBM and the Sacramento Kings (NBA).<br>
 - Managed team leads in Finance, Design and Operations by distributing tasks and consistently meeting with them in order to learn about their progress and to provide assistance for obstacles.<br>
