@@ -1,5 +1,13 @@
 // Wait for the document to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
+
+    var resizeTimeout;
+    window.addEventListener('resize', function(event) {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function(){
+            window.location.reload();
+        }, 100);
+    });
         
     // Select the title element
     const title = document.getElementById("fade-in-title");
@@ -43,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start the process
     fadeInNewTitle();
 });
+
 
 const workVideoPlayer = document.getElementById('workVideoPlayer');
 const workVideoSource = document.getElementById('workVideoSource');
@@ -273,6 +282,7 @@ urls.forEach(url => {
 // window.onload = function () {
 //     preloadVideos(videoUrls);
 //   };
+
 
 preloadVideos(videoUrls);
 
