@@ -264,7 +264,7 @@ position: relative;
   top: -200%;
   left: 82%;
   width: 30%;
-  height: 90%;
+  height: 96%;
   background: url('assets/profile_pic_2.jpeg') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -277,7 +277,7 @@ position: relative;
   top: -10%;
   left: -19%;
   width: 25%;
-  height: 70%;
+  height: 81%;
   background: url('assets/profile_pic_3.jpeg') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -286,13 +286,13 @@ position: relative;
 
 #aboutMeImageOverlay3 {
   position: absolute;
-  top: 15%;
-  left: -55%;
+  top: -85%;
+  left: 205%;
   width: 65%;
   height: 50%;
   background: url('assets/Untitled_Artwork.png') center center no-repeat;
   background-size: cover;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 #aboutMeImageOverlay4 {
@@ -300,7 +300,7 @@ position: relative;
   top: -28%;
   left: 203%;
   width: 60%;
-  height: 90%;
+  height: 94%;
   opacity: 0.75;
   background: url('assets/profile_pic_4.jpeg') center center no-repeat;
   background-size: cover;
@@ -330,5 +330,5 @@ position: relative;
   position: fixed;
   left: 10px; 
   top: 54%;
-  transform: translateY(-54%);
+  transform: translateY(-48%);
 }
