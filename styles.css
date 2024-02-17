@@ -287,9 +287,9 @@ position: relative;
 #aboutMeImageOverlay3 {
   position: absolute;
   top: 15%;
-  left: -35%;
-  width: 45%;
-  height: 40%;
+  left: -55%;
+  width: 65%;
+  height: 50%;
   background: url('assets/Untitled_Artwork.png') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -298,10 +298,10 @@ position: relative;
 #aboutMeImageOverlay4 {
   position: absolute;
   top: -28%;
-  left: 199%;
+  left: 203%;
   width: 60%;
   height: 90%;
-  opacity: 0.8;
+  opacity: 0.75;
   background: url('assets/profile_pic_4.jpeg') center center no-repeat;
   background-size: cover;
   color:black;
