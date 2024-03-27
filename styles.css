@@ -42,8 +42,17 @@ video {
   list-style: none;
   opacity: 0.75;
   padding: 1vh;
-  background-color: white; /* Background color for the rounded rectangle */
-  border-radius: 50%; /* Border radius for the rounded rectangle */
+  background-color: white;
+  border-radius: 50%;
+  justify-content: center;
+  width: 0%;
+  overflow: hidden;
+  transition: width 0.3s ease-out;
+  white-space: nowrap;
+}
+
+.menu.expanded{
+  width: 15%;
 }
 
 .menuItem {

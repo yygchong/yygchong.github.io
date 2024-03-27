@@ -9,47 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 100);
     });
         
-    // Select the title element
-    const title = document.getElementById("fade-in-title");
-    // "welcome to my website on the {world wide web} \u{1F30E} \u{1F9A4} \u{1F44D} 庄永扬"
-    const titles = ["Yong Chong"]; // Define your titles
-    let currentIndex = -1;
+    const animatedMenu = document.querySelectorAll('.menu');
 
-    function fadeInNewTitle() {
-        if (currentIndex >= titles.length - 1) {
-            return;
-        }
-        // Add the 'hidden' class to hide the current title
-        title.classList.add("hidden");
-
-        // After a short delay, update the title content and remove the 'hidden' class to fade it in
-        setTimeout(function () {
-            title.textContent = titles[currentIndex];
-            title.classList.add("visible");
-        }, 600); // Adjust the delay (in milliseconds) as needed
-
-        //Fade out
-        if (currentIndex < titles.length - 2) {
-            setTimeout(function () {
-                title.classList.remove("visible");
-            }, 2500); // Adjust the delay (in milliseconds) as needed
-        }
-        currentIndex = (currentIndex + 1) % titles.length;
-        
-        
-        // Repeat the process after a delay
-        setTimeout(fadeInNewTitle, 3000); // Adjust the delay for title change
-
+    function toggleExpandedMenu() {
+        this.classList.toggle('expanded');
     }
 
-    function fadeInBody() {
-        const body = document.getElementById("fade-in-body");
-        body.classList.add("visible");
+    animatedMenu.forEach(list => list.classList.remove('expanded'));
 
-    }
-
-    // Start the process
-    fadeInNewTitle();
+    setTimeout(function() {
+        animatedMenu.forEach(list => list.classList.add('expanded'));
+      }, 200);
 });
 
 
