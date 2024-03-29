@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function() {
         animatedMenu.forEach(list => list.classList.add('expanded'));
-      }, 200);
+      }, 900);
 });
 
 

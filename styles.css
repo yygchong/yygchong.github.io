@@ -31,28 +31,54 @@ video {
 
 .nextButton {
   margin-top: 10px;
-  background-color: transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border: none;
+  opacity: 0.97;
+  width: 6vw;
   font-size: 1.5rem;
-  color: white;
+  color: black;
+  margin-top: 4%;
+  cursor: pointer;
+  transform:
+    perspective(1000px)
+    rotateX(4deg)
+    rotateY(-16deg)
+    rotateZ(-4deg);
+  box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+
 }
 
 .menu {
   display: flex;
   list-style: none;
-  opacity: 0.75;
+  opacity: 0.97;
   padding: 1vh;
+  margin-top: 5%;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 2px;
   justify-content: center;
+  align-items: center;
   width: 0%;
   overflow: hidden;
-  transition: width 0.3s ease-out;
+  transition: width 0.4s ease-out;
   white-space: nowrap;
+  height: 4%;
+  box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.08);
+
+
+
+
+  /* transform:
+  perspective(600px)
+  rotateX(20deg);
+border-radius: 6px; */
+
+
 }
 
 .menu.expanded{
-  width: 15%;
+  width: 20%;
 }
 
 .menuItem {
@@ -62,13 +88,29 @@ video {
   background-color: black;
   opacity: 0.9;
   border-radius: 20px;
-  width: 10px;
-  height: 10px;
+  width: 0.8vw;
+  height: 0.8vw;
   transition: width 0.3s ease-in-out;
 }
 
 .menuItem.active {
-  width: 40px;
+  width: 3vw;
+}
+
+.bg-black {
+  background-color: black; 
+}
+
+.bg-blue {
+  background-color: blue; 
+}
+
+.bg-green {
+  background-color: lightgreen; 
+}
+
+.bg-yellow {
+  background-color: darkblue; 
 }
 
 .sideways-text {
@@ -150,9 +192,9 @@ video {
   position: relative;
   top: 0;
   left: 0;
-  width: 12%;
+  width: 15%;
   height: auto;
-  opacity: 0.85;
+  opacity: 0.97;
   aspect-ratio: 9 / 9;
   border-radius: 5%;
 }
@@ -193,6 +235,11 @@ video {
 #projectName {
   margin: 0;
   font-size: 1.3rem;
+  background-color: black;
+  width: 8vw;
+  height: 3vw;
+  align-content: center;
+  opacity: 0.97;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a drop shadow to the text */
 }
@@ -237,6 +284,28 @@ position: relative;
   border: 0px solid #333;
 }
 
+#aboutMeName {
+  margin: 0;
+  font-size: 1.3rem;
+  background-color: black;
+  width: 120vw;
+  height: 2vw;
+  align-content: center;
+  opacity: 0.97;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a drop shadow to the text */
+  box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  border: 10px solid pink;
+  border-image: repeating-linear-gradient(
+    -55deg,
+    #000,
+    #000 20px,
+    #ffb101 20px,
+    #ffb101 40px
+  ) 10;
+}
+
 .aboutMeMetaDetails {
   position: absolute;
   top: -4%;
@@ -272,6 +341,7 @@ position: relative;
   justify-content: center;
   color: #fff; 
   text-align: center;
+  overflow: hidden;
 }
 
 #aboutMe video {
