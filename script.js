@@ -3,10 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var resizeTimeout;
     window.addEventListener('resize', function(event) {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(function(){
-            window.location.reload();
-        }, 100);
+        if (window.innerWidth > 768) { //Exclude for mobile
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(function(){
+                window.location.reload();
+            }, 100);
+        }
     });
         
     const animatedMenu = document.querySelectorAll('.menu');
