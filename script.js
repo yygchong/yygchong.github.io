@@ -117,7 +117,8 @@ function changeWorkVersion(pageIndex) {
 }
 
 const sachacksProject = `<p> 
-<b> President + Co-Founder </b> <br> <i> 11.2018 - 03.2020 </i> <br> <br>
+<b> President + Co-Founder </b> <br> <i> 11.2018 - 03.2020 </i><br> 
+<a href="http://sachacks.io">sachacks.io</a> <br><br>
 - Led a team of 40+ people with the mission to create and run Sacramento's <a href="https://www.nba.com/kings/news/sacramento-kings-sachacks-and-major-league-hacking-host-sacramentos-first-extensive"> premiere annual intercollegiate Hackathon</a>, an event aimed towards creating a lasting impact on young engineers, designers and entrepreneurs around the Sacramento region. <br>
 - Directly oversaw a team which raised over $35,000 in funding.<br>
 - Organized meetings and worked directly with partners across different channels including officials from MLH, from schools such as UC Davis, and from corporate sponsors such as IBM and the Sacramento Kings (NBA).<br>
@@ -145,7 +146,8 @@ const heliostatProject = `<p>
     </p>`;
 
 const cstemProject = `<p> 
-    <b> Curriculum Developer </b> <br> <i> 11.2017 - 10.2018 </i> <br> <br>
+    <b> Curriculum Developer </b> <br> <i> 11.2017 - 10.2018 </i> <br>
+    <a href="https://c-stem.ucdavis.edu/">c-stem.ucdavis.edu</a><br><br>
     - Developed ChIDE solutions for the RoboPlay Competition, programming a series of 20 unique Barobo sequences. Edited and directed all the official video content for 2017 - 2018 RoboPlay Competition. <br>
     - Coordinated the 2018 RoboPlay Video Play Competition, which included hundreds of participants from dozens of K-14 school districts. <br> <br>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/cnTzZDkMYXM" frameborder="0" allowfullscreen></iframe> <br>
