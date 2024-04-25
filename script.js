@@ -177,43 +177,114 @@ function changeProjectVersion() {
 let aboutMeVersionIndex = 0;
 
 const aboutMeDefault = `<p> 
-    <b> Yo my name is Yong </b> <br> <i> 1998 -  </i> <br> <br>
+    <b>Hey! 🦤 My name is Yong </b> <br> 
     - I graduated from UC Davis in 2020 with a B.S. in Computer Science <br>
+    - I grew up in Southern California with my parents and sister, who's now a general surgeon at UCLA <br>
     - I'm currently living in San Jose, CA with my cat Olive <br>
-    - I have always found myself to be curious, I love learning about new things, exploring new places and listening to people's stories and ideas <br>
+    - I love learning about new things, exploring new places and listening to people tell me about their passions and interests <br> 
+    - Fun fact I love bragging about: Pokimane and Tyler Oakley follow me on Twitter <br>
     <br>
+    - <b>Some of my hobbies include:</b> <br>
+        - plants and gardening <br>
+        - Super Smash Bros Ultimate <br>
+        - tennis, ping pong and volleyball <br>
+        - breakdancing *<i>(The middle video is <a href="https://www.instagram.com/bboymorris_/?hl=en">bboy morris</a> destroying me in a dance battle)</i> <br>
+        - reading
+    <br>
+
     </p>
     
     <div id="aboutMeImageOverlay4"></div>
     <div id="aboutMeImageOverlay5"></div>`;
 
+const aboutMeReading = `<p> 
+<b> I really enjoying reading, mostly non-fiction to learn new ideas and understand different perspectives </b> <br> <i>  </i> <br>
+- Some of my favorite books are:
+<ul>
+  <li>East of Eden - John Steinbeck</li>
+  <li>The Icarus Deception - Seth Godin</li>
+  <li>Conflict Resolution for Holy Beings - Joy Harjo</li>
+</ul>
+
+- Books I've read in 2024 (so far) <br>
+<ul>
+  <li>Yolk - Mary H. K. Choi</li>
+  <li>The Missing README - Dmitriy Ryaboy, Chris Riccomini</li>
+  <li>The Leadership Engine - Noel M. Tichy</li>
+  <li>The Sun Also Rises - Ernest Hemingway</li>
+  <li>Stolen Focus - Johann Hari</li>
+  <li>The Art of Mindful Living - Thich Nhat Hanh</li>
+  <li>The Wind-Up Bird Chronicle - Haruki Murakami</li>
+  <li>The Reason for God - Timothy Keller</li>
+  <li>The Age of Surveillance Capitalism - Shoshana Zuboff</li>
+  <li>The Staff Engineer's Path - Tanya Reilly</li>
+  <li>How to Talk So Little Kids Will Listen - Joanna Faber, Julie King</li>
+  <li>The Body - Bill Bryson</li>
+  <li>Grit - Angela Duckworth</li>
+  <li>The Undoing Project - Michael Lewis</li>
+  <li>Futureproof - Kevin Roose</li>
+  <li>Laziness Does Not Exist - Devon Price</li>
+  <li>The Friction Project - Robert I. Sutton, Huggy Rao</li>
+  <li>Million Dollar Weekend - Noah Kagan, Tahl Raz</li>
+</ul>
+
+- Books I've read in 2023 <br>
+<ul>
+  <li>Requiem for the American Dream - Noam Chomsky</li>
+  <li>Conflict Resolution for Holy Beings - Joy Harjo</li>
+  <li>What I Talk About When I Talk About Running - Haruki Murakami</li>
+  <li>An American Sunrise - Joy Harjo</li>
+  <li>Time is a Mother - Ocean Vuong</li>
+  <li>我的前半生 - 爱新觉罗. 溥仪</li>
+  <li>Keep Sharp - Sanjay Gupta</li>
+  <li>Gathering Moss - Robin Kimmerer</li>
+  <li>Wolfpack - Abby Wambach</li>
+  <li>I Know Why the Caged Bird Sings</li>
+  <li>Homo Deus - Yuval Noah Harari</li>
+  <li>101 Essays That Will Change the Way You Think - Brianna West</li>
+  <li>The 5AM Club - Robin Sharma</li>
+  <li>American Prometheus - Kai Bird</li>
+  <li>Leadership - Doris Kearns Goodwin</li>
+  <li>The Untethered Soul - Michael A. Singer</li>
+  <li>Dare to Lead - Brene Brown</li>
+  <li>The Hidden Life of Trees - Peter Wohlleben</li>
+  <li>What I Know For Sure - Oprah Winfrey</li>
+  <li>I'm Glad My Mom Died - Jennette McCurdy</li>
+  <li>Poverty, by America - Matthew Desmond</li>
+  <li>The Book of Joy - Dalai Lama, Desmond Tutu, Douglas Carlton</li>
+  <li>Educated - Tara Westover </li>
+  <li>Crying in H Mart - Michelle Zauner</li>
+  <li>What Happened to You?	- Oprah Winfrey, Bruce D. Perry</li>
+  <li>Poverty, by America - Matthew Desmond</li>
+  <li>The Burning Light of Two Stars - Laura Davis</li>
+  <li>Fanatical Prospecting - J.P. Taser</li>
+  <li>Oh My Mother! - Connie Wang</li>
+  <li>The Dichotomy of Leadership - Jocko Willink, Leif Babin</li>
+  <li>Ask Your Developer - Jeff Lawson</li>
+  <li>Necessary Illusions - Noam Chomsky </li>
+  <li>Shape - Jordan Ellenberg</li>
+  <li>How Not to Be Wrong - Jordan Ellenberg</li>
+  <li>Tired of Winning - Jonathan Karl</li>
+  <li>Ship of Fools - Tucker Carlson</li>
+  <li>When Breath Becomes Air - Paul Kalanithi</li>
+  <li>The Happiness Project - Gretchen Rubin</li>
+</ul>
+</p>`;
+
 const aboutMeGardening = `<p> 
-    <b> I have always loved spending time in the garden, and being outside </b> <br> <i>  </i> <br> <br>
+    <b> I have love spending time in the garden, and being outside </b> <br> <i>  </i> <br> <br>
     - As I grew older my love of gardening translated into a large houseplant collection I keep <br>
     - As well as growing edible crops and fruits when I am home or helping out my neighbors in their Yards <br>
     - I try to integrate a level of engineering towards my plants as well including modulating light levels, moisture/nutrients <br>
     <br>
     </p>`;
 
-// const aboutMeContentCreation = `<p> 
-//     <b> Yo my name is Yong </b> <br> <i> 1998 -  </i> <br> <br>
-//     - I graduated from UC Davis in 2020 with a B.S. in Computer Science <br>
-//     - I'm currently living in San Jose, CA with my cat Olive <br>
-//     - I have always found myself to be curious, I love learning about new things, exploring new places and listening to people's stories and ideas <br>
-//     - Growing up I enjoyed drawing, writing stories, and playing video games with my big sister <br> <br>
-//     <br>
-//     </p>`;
 
-// const aboutMeBreakDancing = `<p> 
-//     <b> I enjoy staying active and moving </b> <br> <i> 1998 -  </i> <br> <br>
-//     - During college I found a love for breakdancing, the free flow creativity and physical exertion of break dancing <br>
-//     - I served as UC Davis' break dancing clubs vice president for 2 years <br>
-//     - During 2023 I taught break dancing <br> <br>
-//     <br>
-//     </p>`;
+const aboutMeMetaDetails = document.getElementsByClassName('aboutMeMetaDetails')[0];
 
 const aboutMeVersions = [
-    { video: 'assets/about_me1.mp4', text: '', details: 'About Me', metaDetails: aboutMeDefault}
+    { video: 'assets/about_me1.mp4', text: '', details: 'About Me', metaDetails: aboutMeDefault},
+    { video: 'assets/project_experience4.mp4', text: '', details: 'Reading', metaDetails: aboutMeReading}
 ];
 
 function changeAboutMeVersion() {

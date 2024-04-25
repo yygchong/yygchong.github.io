@@ -49,6 +49,14 @@ video {
 
 }
 
+.nextButton.aboutMe {
+  transform:
+    perspective(1000px)
+    rotateX(4deg)
+    rotateY(-16deg)
+    rotateZ(0deg);
+}
+
 .menu {
   display: flex;
   list-style: none;
@@ -102,7 +110,7 @@ border-radius: 6px; */
 }
 
 .bg-blue {
-  background-color: blue; 
+  background-color: #1061f9; 
 }
 
 .bg-green {
@@ -110,7 +118,7 @@ border-radius: 6px; */
 }
 
 .bg-darkblue {
-  background-color: darkblue; 
+  background-color: #1d5184; 
 }
 
 .sideways-text {
@@ -309,8 +317,8 @@ position: relative;
 .aboutMeMetaDetails {
   position: absolute;
   top: -4%;
-  left: 55%;
-  width: 45%;
+  left: 0%;
+  width: 55%;
   height: 35vh;
   max-height: 35vh;
   color: black;
@@ -332,7 +340,7 @@ position: relative;
 #aboutMeVideoOverlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 55%;
   width: 50%;
   height: 100%;
   display: flex;
@@ -346,6 +354,7 @@ position: relative;
 
 #aboutMe video {
   width: 50%;
+  left: 55%;
   height: 80%;
   object-fit: cover;
 }
@@ -375,39 +384,30 @@ position: relative;
   padding: 10px;
 }
 
-#aboutMeImageOverlay3 {
+/* #aboutMeImageOverlay3 {
   position: absolute;
-  top: 138%;
-  left: -40%;
-  width: 37%;
-  height: 25%;
-  background: url('assets/Untitled_Artwork.png') center center no-repeat;
+  top: -10%;
+  left: 99%;
+  width: 20%;
+  height: 70%;
+  background: url('assets/test.gif') center center no-repeat;
   background-size: cover;
-  opacity: 0.92;
-}
-
-#aboutMeImageOverlay4 {
-  position: absolute;
-  top: -28%;
-  left: 203%;
-  width: 60%;
-  height: 94%;
   opacity: 0.81;
-  background: url('assets/profile_pic_4.jpeg') center center no-repeat;
+  padding: 10px;
+  z-index: 10000;
+} */
+
+/* #aboutMeImageOverlay4 {
+  position: absolute;
+  top: -20%;
+  left: 102%;
+  width: 30%;
+  height: 100%;
+  opacity: 0.81;
+  background: url('assets/test.gif') center center no-repeat;
   background-size: cover;
   color:black;
   padding: 10px;
-}
-
-/* #aboutMeImageOverlay5 {
-  position: absolute;
-  bottom: -15%;
-  left: 40%;
-  width: 50%;
-  height: 50%;
-  background: url('assets/Olive.png') center center no-repeat;
-  background-size: cover;
-  opacity: 1;
 } */
 
 .linkedin-icon {
@@ -421,7 +421,7 @@ position: relative;
   position: fixed;
   left: 10px; 
   top: 54%;
-  transform: translateY(-30%);
+  transform: translateY(-37%);
 }
 
 /* Phone and mobile tablet formatting */
