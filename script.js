@@ -96,6 +96,7 @@ const workVersions = [
     // Add more workVersions as needed
 ];
 let currentWorkVersionIndex = 0;
+workMetaDetails.innerHTML = workVersions[0].metaDetails;
 
 // Function to change the video source and text content
 function changeWorkVersion(pageIndex) {
@@ -118,20 +119,20 @@ function changeWorkVersion(pageIndex) {
 }
 
 const sachacksProject = `<p> 
-<b> President + Co-Founder </b> <br> <i> 11.2018 - 03.2020 </i><br> 
-<a href="http://sachacks.io">sachacks.io</a> <br><br>
-- Led a team of 40+ people with the mission to create and run Sacramento's <a href="https://www.nba.com/kings/news/sacramento-kings-sachacks-and-major-league-hacking-host-sacramentos-first-extensive"> premiere annual intercollegiate Hackathon</a>, an event aimed towards creating a lasting impact on young engineers, designers and entrepreneurs around the Sacramento region. <br>
-- Directly oversaw a team which raised over $35,000 in funding.<br>
-- Organized meetings and worked directly with partners across different channels including officials from MLH, from schools such as UC Davis, and from corporate sponsors such as IBM and the Sacramento Kings (NBA).<br>
-- Managed team leads in Finance, Design and Operations by distributing tasks and consistently meeting with them in order to learn about their progress and to provide assistance for obstacles.<br>
-- With the foundations I helped build, the Hackathon has continued to run without my guidance for 3+ years and has been a staple in the Sacramento region, with over 300 attendees and 100+ projects submitted each year.<br>
-<br>
-<br>
-<b> Head of Finance + Co-Founder </b> <br> <i> 01.2018 - 11.2018 </i> <br> <br>
-- Headed a team of more than 15 people
-- Distributed leads for sponsorship efforts for the inaugural SacHacks Hackathon 2018. 
-- Oversaw the challenging task of raising $30,000 for the first collegiate Hackathon in Sacramento. - Worked closely with companies and organizations such as EA, the NBA (Sacramento Kings), Wolfram, Github, Bloomberg, MLH, Nvidia, Soylent and Google.
-</p>`;
+    <b> President + Co-Founder </b> <br> <i> 11.2018 - 03.2020 </i><br> 
+    <a href="http://sachacks.io">sachacks.io</a> <br><br>
+    - Led a team of 40+ people with the mission to create and run Sacramento's <a href="https://www.nba.com/kings/news/sacramento-kings-sachacks-and-major-league-hacking-host-sacramentos-first-extensive"> premiere annual intercollegiate Hackathon</a>, an event aimed towards creating a lasting impact on young engineers, designers and entrepreneurs around the Sacramento region. <br>
+    - Directly oversaw a team which raised over $35,000 in funding.<br>
+    - Organized meetings and worked directly with partners across different channels including officials from MLH, from schools such as UC Davis, and from corporate sponsors such as IBM and the Sacramento Kings (NBA).<br>
+    - Managed team leads in Finance, Design and Operations by distributing tasks and consistently meeting with them in order to learn about their progress and to provide assistance for obstacles.<br>
+    - With the foundations I helped build, the Hackathon has continued to run without my guidance for 3+ years and has been a staple in the Sacramento region, with over 300 attendees and 100+ projects submitted each year.<br>
+    <br>
+    <br>
+    <b> Head of Finance + Co-Founder </b> <br> <i> 01.2018 - 11.2018 </i> <br> <br>
+    - Headed a team of more than 15 people
+    - Distributed leads for sponsorship efforts for the inaugural SacHacks Hackathon 2018. 
+    - Oversaw the challenging task of raising $30,000 for the first collegiate Hackathon in Sacramento. - Worked closely with companies and organizations such as EA, the NBA (Sacramento Kings), Wolfram, Github, Bloomberg, MLH, Nvidia, Soylent and Google.
+    </p>`;
 
 const locknwalkProject = `<p> 
     <b> Co-Lead </b> <br> <i> 04.2019 - 01.2020 </i> <br> <br>
@@ -154,8 +155,6 @@ const cstemProject = `<p>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/cnTzZDkMYXM" frameborder="0" allowfullscreen></iframe> <br>
     </p>`;
 
-let currentProjectVersionIndex = 0;
-
 const projectVersions = [
     { video: 'assets/project_experience1.mp4', text: 'SacHacks', details: 'My Projects', metaDetails: sachacksProject},
     { video: 'assets/project_experience2.mp4', text: 'Lock and Walk', details: 'My Projects', metaDetails: locknwalkProject},
@@ -166,6 +165,9 @@ const projectVersions = [
 
 const projectMetaDetails = document.getElementsByClassName('projectMetaDetails')[0];
 
+let currentProjectVersionIndex = 0;
+projectMetaDetails.innerHTML = projectVersions[currentProjectVersionIndex].metaDetails;
+
 function changeProjectVersion() {
     currentProjectVersionIndex = (currentProjectVersionIndex + 1) % projectVersions.length;
     projectVideoSource.src = projectVersions[currentProjectVersionIndex].video;
@@ -175,7 +177,7 @@ function changeProjectVersion() {
     projectVideoPlayer.play();
 }
 
-let aboutMeVersionIndex = 0;
+let currentAboutMeVersionIndex = 0;
 
 const aboutMeDefault = `<p> 
     <b>Hey! 🦤 My name is Yong </b> <br> 
@@ -282,7 +284,6 @@ const aboutMeGardening = `<p>
     <br>
     </p>`;
 
-
 const aboutMeMetaDetails = document.getElementsByClassName('aboutMeMetaDetails')[0];
 
 const aboutMeVersions = [
@@ -290,12 +291,14 @@ const aboutMeVersions = [
     { video: 'assets/about_me2.mp4', text: '', details: 'Reading', metaDetails: aboutMeReading}
 ];
 
+aboutMeMetaDetails.innerHTML = aboutMeVersions[currentAboutMeVersionIndex].metaDetails;
+
 function changeAboutMeVersion() {
-    aboutMeVersionIndex = (aboutMeVersionIndex + 1) % aboutMeVersions.length;
-    aboutMeVideoSource.src = aboutMeVersions[aboutMeVersionIndex].video;
-    aboutMeTextOverlay.textContent = aboutMeVersions[aboutMeVersionIndex].text;
-    aboutMeDetailsOverlay.textContent = aboutMeVersions[aboutMeVersionIndex].details;
-    aboutMeMetaDetails.innerHTML = aboutMeVersions[aboutMeVersionIndex].metaDetails;
+    currentAboutMeVersionIndex = (currentAboutMeVersionIndex + 1) % aboutMeVersions.length;
+    aboutMeVideoSource.src = aboutMeVersions[currentAboutMeVersionIndex].video;
+    aboutMeTextOverlay.textContent = aboutMeVersions[currentAboutMeVersionIndex].text;
+    aboutMeDetailsOverlay.textContent = aboutMeVersions[currentAboutMeVersionIndex].details;
+    aboutMeMetaDetails.innerHTML = aboutMeVersions[currentAboutMeVersionIndex].metaDetails;
     aboutMeVideoPlayer.load();
     aboutMeVideoPlayer.play();
 }
