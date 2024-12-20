@@ -204,7 +204,7 @@ const aboutMeReading = `<p>
 <b> I really enjoying reading, mostly non-fiction to learn new ideas and understand different perspectives </b> <br> <i>  </i> <br>
 - Some of my favorite books are:
 <ul>
-  <li>Design That Scales: Creating a Sustainable Design System Practice - Dan Mall </li>
+  <li>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems - Martin Kleppmann </li>
   <li>The Icarus Deception - Seth Godin</li>
   <li>East of Eden - John Steinbeck</li>
   <li>Conflict Resolution for Holy Beings - Joy Harjo</li>
