@@ -191,7 +191,7 @@ const aboutMeDefault = `<p>
         - plants and gardening <br>
         - Super Smash Bros Ultimate <br>
         - tennis, ping pong and volleyball <br>
-        - breakdancing *<i>(The middle video is <a href="https://www.instagram.com/bboymorris_/?hl=en">bboy morris</a> destroying me in a dance battle)</i> <br>
+        - breakdancing *<i>(The middle video is <a href="https://www.teamusa.com/profiles/morris-isby">bboy morris</a> dunking on me)</i> <br>
         - reading
     <br>
 
@@ -204,13 +204,17 @@ const aboutMeReading = `<p>
 <b> I really enjoying reading, mostly non-fiction to learn new ideas and understand different perspectives </b> <br> <i>  </i> <br>
 - Some of my favorite books are:
 <ul>
-  <li>East of Eden - John Steinbeck</li>
+  <li>Design That Scales: Creating a Sustainable Design System Practice - Dan Mall </li>
   <li>The Icarus Deception - Seth Godin</li>
+  <li>East of Eden - John Steinbeck</li>
   <li>Conflict Resolution for Holy Beings - Joy Harjo</li>
 </ul>
 
 - Books I've read in 2024 (so far) <br>
 <ul>
+  <li>Kokoro - Natsume Sōseki </li>
+  <li>Design That Scales: Creating a Sustainable Design System Practice - Dan Mall </li>
+  <li>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems - Martin Kleppmann </li>
   <li>Yolk - Mary H. K. Choi</li>
   <li>The Missing README - Dmitriy Ryaboy, Chris Riccomini</li>
   <li>The Leadership Engine - Noel M. Tichy</li>
