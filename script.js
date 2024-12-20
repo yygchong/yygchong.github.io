@@ -188,3 +188,17 @@ function switchPage(pageIndex) {
     // Set the clicked item to active state
     menuItems[pageIndex].classList.add('active');
   }
+
+// Preload images
+const folderPath = "./assets/";
+const imageFiles = ["work_emote_1.jpeg", "work_emote_2.jpeg", "work_emote_3.jpeg", "project_emote_1.jpeg", "project_emote_2.jpeg", "project_emote_3.jpeg", "vsp_logo.png", "ucdavis_logo.svg", "ibm_logo.png", "tiktok_logo.svg"];
+
+function preloadImages(path, images) {
+    images.forEach(filename => {
+      const img = new Image();
+      img.src = `${path}${filename}`;
+    });
+  }
+  
+  // Call the function
+  preloadImages(folderPath, imageFiles);
