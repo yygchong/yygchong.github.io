@@ -359,26 +359,86 @@ position: relative;
   object-fit: cover;
 }
 
-#aboutMeImageOverlay1 {
+#workEmote1 {
   position: absolute;
-  top: -200%;
+  top: 0%;
   left: 82%;
   width: 30%;
-  height: 96%;
-  background: url('assets/profile_pic_2.jpeg') center center no-repeat;
+  height: 45%;
+  background: url('assets/work_emote_1.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+#workEmote2 {
+  position: absolute;
+  top: 0%;
+  left: 82%;
+  width: 30%;
+  height: 45%;
+  background: url('assets/work_emote_2.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+#workEmote3 {
+  position: absolute;
+  top: 0%;
+  left: 82%;
+  width: 30%;
+  height: 45%;
+  background: url('assets/work_emote_3.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+#workEmote4 {
+  position: absolute;
+  top: 0%;
+  left: 82%;
+  width: 30%;
+  height: 45%;
+  background: url('assets/work_emote_4.jpeg') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
   padding: 10px;
 }
 
 
-#aboutMeImageOverlay2 {
+#projectEmote1 {
   position: absolute;
   top: -10%;
   left: -19%;
   width: 25%;
   height: 81%;
-  background: url('assets/profile_pic_3.jpeg') center center no-repeat;
+  background: url('assets/project_emote_1.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+#projectEmote2 {
+  position: absolute;
+  top: -10%;
+  left: -19%;
+  width: 25%;
+  height: 81%;
+  background: url('assets/project_emote_2.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+#projectEmote3 {
+  position: absolute;
+  top: -10%;
+  left: -19%;
+  width: 25%;
+  height: 81%;
+  background: url('assets/project_emote_3.jpeg') center center no-repeat;
   background-size: cover;
   opacity: 0.9;
   padding: 10px;
@@ -497,15 +557,8 @@ position: relative;
     transform: translate(0%, 0%);
   }
 
-  #aboutMeImageOverlay1 {
-    top: -220%;
-    left: 82%;
-    width: 30%;
-    height: 96%;
-    font-size: 12px;
-  }
 
-  #aboutMeImageOverlay2 {
+  #projectEmote1 {
     top: -10%;
     left: -19%;
     width: 25%;
