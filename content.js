@@ -42,7 +42,7 @@ const ucdavisExperience = `
     - <a href="https://sjoseph.ucdavis.edu"> https://sjoseph.ucdavis.edu/ </a><br>
     </p>`;
 
-const workEmote1 = `<div id="workEmote1">Hey how's it going, happy holidays, <br> this is my <b style="font-size: 23px;">work experience</b>. <br> Just click the colorful dots to see more</div>`;
+const workEmote1 = `<div id="workEmote1">Hey how's it going, <br> this is my <b style="font-size: 23px;">work experience</b>. <br> Just click the colorful dots to see more</div>`;
 const workEmote2 = `<div id="workEmote2">Notice how the dots are color coordinated with the logo colors</div>`;
 const workEmote3 = `<div id="workEmote3">It took me way too long to decide on how I wanted to design it, either mono color, multi color and if so whether to make them color coordinated</div>`;
 const workEmote4 = `<div id="workEmote4">But I ultimately thought colors made the page look more fun, and isn't that something we all need more of?</div>`;
