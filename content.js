@@ -44,8 +44,8 @@ const ucdavisExperience = `
 
 const workEmote1 = `<div id="workEmote1">Hey how's it going, this is my <br> <b style="font-size: 23px;">work experience</b>. <br> Just click the colorful dots to see more</div>`;
 const workEmote2 = `<div id="workEmote2">Notice how the dots are color coordinated with the logo colors</div>`;
-const workEmote3 = `<div id="workEmote3">It took me way too long to decide on how I wanted to design it, either mono color, multi color and if so whether to make them color coordinated</div>`;
-const workEmote4 = `<div id="workEmote4">But I ultimately thought colors made the page look more fun, and isn't that something we all need more of?</div>`;
+const workEmote3 = `<div id="workEmote3">That was a design decision to make the page more fun</div>`;
+const workEmote4 = `<div id="workEmote4">And to reflect the fact that I am a fun guy</div>`;
     
 
 
