@@ -99,8 +99,8 @@ const projectEmote3 = `<div id="projectEmote3">Oh hey, these are some of <b styl
 const aboutMeDefault = `<p> 
     <b>Hey! 🦤 My name is Yong </b> <br> 
     - I graduated from UC Davis in 2020 with a B.S. in Computer Science <br>
-    - I grew up in Southern California with my parents and sister, who works as a general surgeon at UCLA <br>
-    - I'm currently living in Irvine, CA with my cat Olive <br>
+    - I grew up in Southern California with my parents and sister <a href="https://www.instagram.com/harborsurgery/p/CxHN_W4xuRT/?img_index=1"a> Jazlyn</a>, who works as a general surgeon at UCLA. My sister inspires me to always work and to do the right thing to help others<br>
+    - I'm currently living in Redondo Beach, CA with my cat Olive <br>
     - I love learning about new things, exploring new places and listening to people tell me about their passions and interests <br> 
     - Fun fact I love bragging about: <a href="https://www.youtube.com/pokimane">Pokimane</a> and <a href="https://www.youtube.com/@TylerOakley">Tyler Oakley</a>  follow me on Twitter (X) <br>
     <br>
