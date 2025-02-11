@@ -88,8 +88,8 @@ const cstemProject = `<p>
     </p>`;
 
 
-const projectEmote1 = `<div id="projectEmote1"></div>`;
-const projectEmote2 = `<div id="projectEmote2">Wha-?</div>`;
+const projectEmote1 = `<div id="projectEmote3">Oh hey, these are some of <b style="font-size: 23px;">my projects</b> that I've worked on.</div>`;
+const projectEmote2 = `<div id="projectEmote3">Oh hey, these are some of <b style="font-size: 23px;">my projects</b> that I've worked on.</div>`;
 const projectEmote3 = `<div id="projectEmote3">Oh hey, these are some of <b style="font-size: 23px;">my projects</b> that I've worked on.</div>`;
 
 
@@ -130,7 +130,7 @@ const aboutMeReading = `<p>
   <li>Conflict Resolution for Holy Beings - Joy Harjo</li>
 </ul>
 
-- Books I've read in 2024 (so far) <br>
+- Books I've read in 2024 <br>
 <ul>
   <li>Kokoro - Natsume Sōseki </li>
   <li>Design That Scales: Creating a Sustainable Design System Practice - Dan Mall </li>
