@@ -130,6 +130,18 @@ const aboutMeReading = `<p>
   <li>Conflict Resolution for Holy Beings - Joy Harjo</li>
 </ul>
 
+- Books I've read in 2025 <br>
+<li>Breakfast of Champions - Kurt Vonnegut</li>
+<li>API Book - Brian Cooksey</li>
+<li>Meditations - Marcus Aurelius</li>
+<li>The Prince - Niccolo Machiavelli </li>
+<li>The Art of War - Sun Tzu </li>
+<li>Down and Out in Paris and London - George Orwell</li>
+<li>Grokking the System Design Interview - Design Gurus</li>
+<li>The Code of Hammurabi - Hammurabi</li>
+<ul>
+</ul>
+
 - Books I've read in 2024 <br>
 <ul>
   <li>Kokoro - Natsume Sōseki </li>
