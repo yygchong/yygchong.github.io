@@ -45,7 +45,7 @@ const ucdavisExperience = `
 const workEmote1 = `<div id="workEmote1">Hey how's it going, this is my <br> <b style="font-size: 19px;">work experience</b>. Just click the dots to see more</div>`;
 const workEmote2 = `<div id="workEmote2">Notice how the dots are color coordinated with the logo colors</div>`;
 const workEmote3 = `<div id="workEmote3">That was a design decision to make the page more fun</div>`;
-const workEmote4 = `<div id="workEmote4">And to reflect the fact that I am a fun guy</div>`;
+const workEmote4 = `<div id="workEmote4">If you're done reading about my work experience you can scroll down for more info</div>`;
     
 
 
