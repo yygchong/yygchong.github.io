@@ -131,7 +131,9 @@ const aboutMeReading = `<p>
 </ul>
 
 - Books I've read in 2025 <br>
-
+<ul>
+    <li>Twelve Years a Slave - Solomon Northup</li>
+    <li>Linux Pocket Guide: Essential Commands - Daniel J. Barrett</li>
     <li>Breakfast of Champions - Kurt Vonnegut</li>
     <li>API Book - Brian Cooksey</li>
     <li>Meditations - Marcus Aurelius</li>
@@ -140,7 +142,6 @@ const aboutMeReading = `<p>
     <li>Down and Out in Paris and London - George Orwell</li>
     <li>Grokking the System Design Interview - Design Gurus</li>
     <li>The Code of Hammurabi - Hammurabi</li>
-<ul>
 </ul>
 
 - Books I've read in 2024 <br>
