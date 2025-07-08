@@ -125,6 +125,10 @@ const aboutMeReading = `<p>
 
 - Books I've read in 2025 <br>
 <ul>
+    <li>The Dispossessed - Ursula K. Le Guin</li>
+    <li>The Rebel - Albert Camus</li>
+    <li>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma - Bessel van der Kolk</li>
+    <li>Pride and Prejudice - Jane Austen</li>
     <li>Twelve Years a Slave - Solomon Northup</li>
     <li>Linux Pocket Guide: Essential Commands - Daniel J. Barrett</li>
     <li>Breakfast of Champions - Kurt Vonnegut</li>
@@ -135,11 +139,11 @@ const aboutMeReading = `<p>
     <li>Down and Out in Paris and London - George Orwell</li>
     <li>Grokking the System Design Interview - Design Gurus</li>
     <li>The Code of Hammurabi - Hammurabi</li>
+    <li>Kokoro - Natsume Sōseki </li>
 </ul>
 
 - Books I've read in 2024 <br>
 <ul>
-  <li>Kokoro - Natsume Sōseki </li>
   <li>Design That Scales: Creating a Sustainable Design System Practice - Dan Mall </li>
   <li>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems - Martin Kleppmann </li>
   <li>Yolk - Mary H. K. Choi</li>
