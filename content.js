@@ -125,13 +125,16 @@ const aboutMeReading = `<p>
 
 - Books I've read in 2025 <br>
 <ul>
+    <li>All Quiet on the Western Front - Erich Maria Remarque</li>
+    <li>Algorithms to Live By: The Computer Science of Human Decisions - Brian Christian and Tom Griffiths</li>
+    <li>Breakfast of Champions - Kurt Vonnegut</li>
+    <li>GRPC: Up and Running - Danesh Kuruppu and Kasun Indrasiri</li>
     <li>The Dispossessed - Ursula K. Le Guin</li>
     <li>The Rebel - Albert Camus</li>
-    <li>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma - Bessel van der Kolk</li>
+    <li>The Body Keeps the Score - Bessel van der Kolk</li>
     <li>Pride and Prejudice - Jane Austen</li>
     <li>Twelve Years a Slave - Solomon Northup</li>
     <li>Linux Pocket Guide: Essential Commands - Daniel J. Barrett</li>
-    <li>Breakfast of Champions - Kurt Vonnegut</li>
     <li>API Book - Brian Cooksey</li>
     <li>Meditations - Marcus Aurelius</li>
     <li>The Prince - Niccolo Machiavelli </li>
