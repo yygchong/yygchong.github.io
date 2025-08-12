@@ -125,6 +125,7 @@ const aboutMeReading = `<p>
 
 - Books I've read in 2025 <br>
 <ul>
+    <li>Cat's Cradle - Kurt Vonnegut</li>
     <li>All Quiet on the Western Front - Erich Maria Remarque</li>
     <li>Algorithms to Live By: The Computer Science of Human Decisions - Brian Christian and Tom Griffiths</li>
     <li>Breakfast of Champions - Kurt Vonnegut</li>
