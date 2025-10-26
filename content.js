@@ -125,11 +125,15 @@ const aboutMeReading = `<p>
 
 - Books I've read in 2025 <br>
 <ul>
+    <li>Orwell's Roses - Rebecca Solnit</li>
+    <li>2BR02B - Kurt Vonnegut, Jr.</li>
+    <li>The Sirens of Titan - Kurt Vonnegut, Jr.</li>
+    <li>Another Country - James Baldwin</li>
     <li>The Ethics of Ambiguity - Simone de Beauvoir</li>
     <li>The Brothers Karamazov - Fyodor Dostoevsky</li>
     <li>Walking - Henry David Thoreau</li>
     <li>The Ones Who Walk Away from Omelas - Ursula K. Le Gui</li>
-    <li>Slaughterhouse-Five -  Kurt Vonnegut, Jr.</li>
+    <li>Slaughterhouse-Five - Kurt Vonnegut, Jr.</li>
     <li>Kitchen Confidential - Anthony Bourdain</li>
     <li>Cat's Cradle - Kurt Vonnegut</li>
     <li>All Quiet on the Western Front - Erich Maria Remarque</li>
